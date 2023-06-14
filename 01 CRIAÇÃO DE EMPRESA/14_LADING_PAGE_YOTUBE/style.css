@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,500&display=swap');
+
+:root{
+    --color-primary:#343434;
+    --color-white:#f2f2f2;
+    --color-secondary:rgb(55, 158, 115);
+}
+
+body{
+    font-family: 'Roboto';
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section{
+    flex-direction: column;
+    line-height: 10px;
+    font-size: 24px;
+}
+
+h1{
+    font-weight: 200;
+    text-align: center;
+}
+
+li{
+    display:inline-block;
+    margin: 20px;
+}
+
+
+a{
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:hover{
+    color: var(--color-secondary);
+    transition: 0.4s all;
+}
+
+#title-unic{
+    border: 2px solid var(--color-secondary);
+    padding: 16px;
+    border-radius: 20px;
+}
+
+#title-unic:hover{
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.aside{
+    font-size: 56px ;
+    line-height: 10px;
+    font-family: 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap';
+}
+
+img{
+    width: 450px;
+    margin-left: 200px;
+}
+
+span{
+    color: var(--color-secondary);
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px;
+    font-family: 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,500&display=swap';
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+input{
+    margin-top: 20px;
+    height: 27px;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    font-weight: bold;
+}
+
+form:hover [type="submit"]{
+   cursor: pointer;
+
+}
